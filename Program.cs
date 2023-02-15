@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
-//Console.WriteLine("Hello, World!");
+
+
 //main
 
 int num;
@@ -31,7 +32,9 @@ while(num != 3)
 
 
 
-
+//********************************************************************
+//    DISPLAYS YOUR OPTIONS
+//********************************************************************
 static void DisplayMenu()
 {
     System.Console.WriteLine(" ");
@@ -42,6 +45,9 @@ static void DisplayMenu()
 }
 
 
+//********************************************************************
+//     GETS A REGULAR-DEGULAR PYRAMID
+//********************************************************************
 static void GetFull()
 {
         Random rand = new Random();
@@ -65,8 +71,12 @@ static void GetFull()
              
             System.Console.WriteLine("");
         } 
-    }
+}
 
+    //********************************************************************
+    //     GETS A HOLE-Y PYRAMID
+    //********************************************************************
+    
     static void GetPartial()
     {
         Random rand = new Random();
@@ -100,7 +110,12 @@ static void GetFull()
         } 
     }
 
-    static void GetError()
-    {
-        System.Console.WriteLine("Invalid selection. Please try again");
-    }
+//********************************************************************
+//     WHEN THE USER INPUTS WRONG
+//********************************************************************
+
+
+static void GetError()
+{
+    System.Console.WriteLine("Invalid selection. Please try again");
+}
