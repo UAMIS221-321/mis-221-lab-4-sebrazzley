@@ -25,6 +25,7 @@ while(input != "3")
 
     DisplayMenu();
     input = System.Console.ReadLine();
+    
 }
 
 
