@@ -3,19 +3,20 @@
 
 //main
 
-int num;
+string input;
 
 
 DisplayMenu();
-num = int.Parse (Console.ReadLine());
 
-while(num != 3)
+input = System.Console.ReadLine();
+
+while(input != "3")
 {
-    if(num ==1)
+    if(input == "1")
     {
         GetFull();
     }
-    else if (num ==2)
+    else if (input =="2")
     {
         GetPartial();
     }
@@ -23,7 +24,7 @@ while(num != 3)
         GetError();
 
     DisplayMenu();
-    num = int.Parse(System.Console.ReadLine());
+    input = System.Console.ReadLine();
 }
 
 
@@ -92,8 +93,6 @@ static void GetFull()
             }
             for(int j = 0; j <= i; j++ )
             {
-            
-
                 int rand_num1 = rand.Next (0,2);
                 
                 if(rand_num1 == 0)
